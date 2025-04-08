@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;900&family=Playfair+Display:wght@400;600;900&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<style>
+    * {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.745), rgba(0, 0, 0, 0.784), rgba(0, 0, 0, 0.811)), url(14.-Oto-Mashed-Yam-with-Red-Onions-from-Ghana.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #5A3A1C;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    animation: slideDown 1s ease;
+  }
+  @keyframes slideDown {
+    from { transform: translateY(-100%); }
+    to { transform: translateY(0); }
+  }
+  .logo {
+    font-family: "Playfair Display", serif;
+    font-weight: 900;
+    font-size: 30px;
+    color: #E2B007;
+    text-transform: uppercase;
+  }
+  nav ul {
+    display: flex;
+    gap: 30px;
+  }
+  nav a {
+    color: #E2B007;
+    text-transform: uppercase;
+    font-family: "Playfair Display", serif;
+    font-weight: 500;
+    position: relative;
+    transition: color 0.3s ease;
+  }
+  nav a::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    height: 2px;
+    width: 0;
+    background: white;
+    transition: width 0.4s ease;
+  }
+  nav a:hover::after {
+    width: 100%;
+  }
+  nav a:hover {
+    color: white;
+  }
+  .cta-button {
+    padding: 12px 24px;
+    background: #E2B007;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .cta-button:hover {
+    background-color: white;
+    color: #E2B007;
+  }
+  .main_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+    gap: 100px;
+    padding: 30px;
+  }
+  .items {
+    height: 300px;
+    width: 400px;
+    box-shadow: 0 0 5px 7px rgba(0, 0, 0, 0.107);
+    border: 5px #E2B007 solid;
+    border-radius: 10px;
+  }
+  .h2_1 {
+    font-family: "Playfair Display", serif;
+    color: #E2B007;
+    font-size: 60px;
+    text-align: center;
+    padding: 100px 0 0 0;
+  }
+  .p_1 {
+      font-family: "Nunito", serif;
+      color: white;
+      font-size: 30px;
+      font-weight: 600;
+      text-align: center;
+      padding: 60px 0 100px 0;
+      text-transform: capitalize;
+  }
+  img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+  @media (max-width: 768px) {
+    nav ul {
+      display: none;
+      flex-direction: column;
+      background-color: #5A3A1C;
+      position: absolute;
+      right: 40px;
+      top: 70px;
+      padding: 10px 20px;
+      border-radius: 8px;
+    }
+    .nav-toggle {
+      display: block;
+      color: #E2B007;
+      font-size: 24px;
+      cursor: pointer;
+    }
+  }
+</style>
+<body>
+    <header>
+        <div class="logo">DI BTEC PROJECT</div>
+        <div class="nav-toggle" onclick="toggleMenu()">
+          <i class="fas fa-bars"></i>
+        </div>
+        <nav>
+          <ul id="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+          </ul>
+        </nav>
+        <a href="#booking" class="cta-button">Book Now</a>
+      </header>
+      <section class="section_1">
+        <h2 class="h2_1">
+          Gallery
+        </h2>
+        <p class="p_1">
+          explore a wide range of eastern ghana taste
+        </p>
+      </section>
+      <div class="main_container">
+        <div class="items">
+            <img src="apra.jpg" alt="">
+        </div>
+        <div class="items">
+          <img src="03310664-d4fb-4e89-8d70-c0cd6ae5f64e.jpg" alt="">
+        </div>
+        <div class="items">
+          <img src="Osino__graphic__02.jpg" alt="">
+        </div>
+        <div class="items">
+          <img src="keesha-s-kitchen-woC24wGXsQ8-unsplash.jpg" alt="">
+        </div>
+        <div class="items">
+          <img src="o graphic.jpg" alt="">
+        </div>
+        <div class="items">
+          <img src="maxresdefault3.jpg" alt="">
+        </div>
+        <div class="items">
+          <img src="maxresdefault.jpg" alt="">
+        </div>
+        <div class="items">
+          <img src="Oto (Mashed Yam with Red Onions) from Ghana.jpg" alt="">
+        </div>
+        <div class="items">
+          <img src="Recipes from around the world_ Fufu and Lightsoup.jpg" alt="">
+        </div>
+        <div class="items">
+          <img class="eto9" src="maxresdefault2.jpg" alt="">
+        </div>
+        <div class="items">
+          <img src="Teki Martei's Aprapransa8.jpg" alt="">
+        </div>
+        <div class="items">
+          <img src="yam-eto_1-1.webp" alt="">
+      </div>
+</body>
+</html>

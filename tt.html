@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.964), rgba(0, 0, 0, 0.877), rgba(0, 0, 0, 0.932)), url(maxresdefault1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+header {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #5A3A1C;
+}
+.logo {
+    text-transform: uppercase;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 30px;
+    color: #E2B007;
+    padding: 40px;
+}
+ul {
+    display: flex;
+    gap: 50px;
+    padding: 40px;
+}
+a {
+    color: #E2B007;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    position: relative;
+    width: max-content;
+}
+a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.9s ease;
+}
+a:hover::after {
+    content: '';
+    background: white;
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.button {
+    margin: 40px;
+    color: white;
+    background: #E2B007;
+    height: 65px;
+    width: 200px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button:hover {
+    cursor: pointer;
+    margin: 40px;
+    color: #E2B007;
+    background-color: white;
+    height: 65px;
+    width: 200px;
+    border: none;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.9s;
+}
+.h2_1 {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 60px;
+    text-align: center;
+    color: #5A3A1C;
+    padding: 200px 40px 10px 40px;
+}
+.p_1 {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 30px;
+    text-align: center;
+    color: #5A3A1C;
+    padding: 60px 125px 10px 140px;
+    line-height: 40px;
+}
+.div_button_1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button_1 {
+    margin: 40px;
+    color: white;
+    background: #E2B007;
+    height: 70px;
+    width: 200px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: "Nunito", serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button_1:hover {
+    margin: 40px;
+    color: #E2B007;
+    background: white;
+    height: 70px;
+    width: 200px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: "Nunito", serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer {
+    position: relative;
+    bottom: 0;
+    background-color: #5A3A1C;
+    height: 200px;
+}
+.footer_options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.h4_1 { 
+    
+    color: #E2B007;
+    font-size: 20px;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    position: relative;
+    width: max-content;
+}
+.h4_1::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #E2B007;
+    height: 1px;
+    width: 100%;
+}
+.quick_links {
+    padding: 20px;
+}
+.ul_1 {
+    display: block;
+}
+footer li {
+    color: #E2B007;
+    font-size: 20px;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    position: relative;
+    left: 0;
+}
+</style>
+<body>
+    <header>
+        <div class="logo">di btec project</div>
+        <nav>
+            <ul>
+                <li><a href="">home</a></li>
+                <li><a href="">about</a></li>
+                <li><a href="">contact</a></li>
+                <li><a href="">gallery</a></li>
+            </ul>
+        </nav>
+        <div class="button">book now</div>
+    </header>
+    <section class="sec_1">
+        <h2 class="h2_1">
+            Experience the Flavor of Eastern Ghana!
+        </h2>
+        <p class="p_1">
+            From rich traditional stews to vibrant street food,
+            the Eastern Region of Ghana offers a delicious journey through culture, taste, and hospitality
+        </p>
+        <div class="div_button_1">
+        <button class="button_1">
+            Explore More
+        </button>
+        </div>
+    </section>
+    <footer>
+        <div class="footer_options">
+            <div class="quick_links">
+                <h4 class="h4_1">
+                    Quick Links
+                </h4>
+                <ul class="ul_1">
+                    <li>About</li>
+                    <li>Gallery</li>
+                    <li>Home</li>
+                </ul>
+            </div>
+            <div class="social_medialinks">
+                <h4 class="h4_1">
+                    Social Media Links
+                </h4>
+                <ul class="ul_1">
+                    <li>Instagram</li>
+                    <li>Twitter</li>
+                    <li>Facebook</li>
+                </ul>
+            </div>
+            <div class="contact_us">
+                <h4 class="h4_1">
+                    Contact Us
+                </h4>
+                <ul class="ul_1">
+                    <li>Email</li>
+                    <li>Phone</li>
+                </ul>
+            </div>
+            <div class="copyright">
+                <h4 class="h4_1">
+                    &copy; JEREMIAH YANKSON 2025
+                </h4>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

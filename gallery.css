@@ -1,0 +1,241 @@
+* {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  list-style-type: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.8)), url('14.-Oto-Mashed-Yam-with-Red-Onions-from-Ghana.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: "Nunito", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #5A3A1C;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  animation: slideDown 1s ease;
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-100%); }
+  to { transform: translateY(0); }
+}
+
+.logo {
+  font-family: "Playfair Display", serif;
+  font-weight: 900;
+  font-size: 30px;
+  color: #E2B007;
+  text-transform: uppercase;
+}
+
+nav ul {
+  display: flex;
+  gap: 30px;
+}
+
+nav a {
+  color: #E2B007;
+  text-transform: uppercase;
+  font-family: "Playfair Display", serif;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background: white;
+  transition: width 0.4s ease;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+nav a:hover {
+  color: white;
+}
+
+.cta-button {
+  padding: 12px 24px;
+  background: #E2B007;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: white;
+  color: #E2B007;
+}
+
+.section_1 {
+  text-align: center;
+  padding: 100px 20px 60px;
+}
+
+.h2_1 {
+  font-family: "Playfair Display", serif;
+  color: #E2B007;
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+.p_1 {
+  color: white;
+  font-size: 30px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.main_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  padding: 40px 20px;
+}
+
+.items {
+  width: 350px;
+  height: 250px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  border: 5px solid #E2B007;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  animation: fadeIn 1.2s ease both;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.image-wrapper:hover img {
+  transform: scale(1.05);
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 20px;
+  transform: translateY(100%);
+  transition: transform 0.4s ease;
+}
+
+.overlay p {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.image-wrapper:hover .overlay {
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background-color: #5A3A1C;
+    position: absolute;
+    right: 40px;
+    top: 70px;
+    padding: 10px 20px;
+    border-radius: 8px;
+  }
+
+  .nav-toggle {
+    display: block;
+    color: #E2B007;
+    font-size: 24px;
+    cursor: pointer;
+  }
+}
+footer {
+  background-color: #5A3A1C;
+  padding: 40px 20px;
+  color: #E2B007;
+  animation: fadeIn 2s ease;
+}
+.footer_options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+footer h4 {
+  margin-bottom: 15px;
+  font-weight: 700;
+  position: relative;
+}
+footer h4::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  height: 2px;
+  width: 40px;
+  background-color: #E2B007;
+}
+.ul_1 li {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+.social_icons i {
+  margin-right: 15px;
+  color: #E2B007;
+  font-size: 20px;
+  transition: transform 0.3s ease;
+}
+.social_icons i:hover {
+  transform: scale(1.2);
+}
+.copyright {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 14px;
+  opacity: 0.8;
+}

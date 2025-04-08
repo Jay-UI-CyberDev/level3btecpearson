@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="gallery.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;900&family=Playfair+Display:wght@400;600;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <title>Gallery</title>
+</head>
+<body>
+  <header>
+    <div class="logo">DI BTEC PROJECT</div>
+    <div class="nav-toggle" onclick="toggleMenu()">
+      <i class="fas fa-bars"></i>
+    </div>
+    <nav>
+      <ul id="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+    <a href="#booking" class="cta-button">Book Now</a>
+  </header>
+
+  <section class="section_1">
+    <h2 class="h2_1">Gallery</h2>
+    <p class="p_1">Explore a wide range of Eastern Ghana taste</p>
+  </section>
+
+  <div class="main_container">
+    <!-- Repeat this item structure for each image -->
+    <div class="items"><div class="image-wrapper"><img src="apra.jpg"><div class="overlay"><p>Aprapransa</p></div></div></div>
+    <div class="items"><div class="image-wrapper"><img src="03310664-d4fb-4e89-8d70-c0cd6ae5f64e.jpg"><div class="overlay"><p>Konkonte</p></div></div></div>
+    <div class="items"><div class="image-wrapper"><img src="Osino__graphic__02.jpg"><div class="overlay"><p>Osino Delight</p></div></div></div>
+    <div class="items"><div class="image-wrapper"><img src="keesha-s-kitchen-woC24wGXsQ8-unsplash.jpg"><div class="overlay"><p>Jollof Rice</p></div></div></div>
+    <div class="items"><div class="image-wrapper"><img src="o graphic.jpg"><div class="overlay"><p>Osino Graphic</p></div></div></div>
+    <div class="items"><div class="image-wrapper"><img src="maxresdefault3.jpg"><div class="overlay"><p>Eto Yam</p></div></div></div>
+    <div class="items"><div class="image-wrapper"><img src="maxresdefault.jpg"><div class="overlay"><p>Festive Platter</p></div></div></div>
+    <div class="items"><div class="image-wrapper"><img src="Oto (Mashed Yam with Red Onions) from Ghana.jpg"><div class="overlay"><p>Oto Yam</p></div></div></div>
+    <div class="items"><div class="image-wrapper"><img src="Recipes from around the world_ Fufu and Lightsoup.jpg"><div class="overlay"><p>Fufu & Light Soup</p></div></div></div>
+    <div class="items"><div class="image-wrapper"><img src="maxresdefault2.jpg"><div class="overlay"><p>Oto Yam</p></div></div></div>
+    <div class="items"><div class="image-wrapper"><img src="Teki Martei's Aprapransa8.jpg"><div class="overlay"><p>Aprapransa Style 2</p></div></div></div>
+    <div class="items"><div class="image-wrapper"><img src="yam-eto_1-1.webp"><div class="overlay"><p>Yam Eto</p></div></div></div>
+  </div>
+  <footer>
+    <div class="footer_options">
+      <div class="quick_links">
+        <h4>Quick Links</h4>
+        <ul class="ul_1">
+          <li><a href="about.html">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="index.html">Home</a></li>
+        </ul>
+      </div>
+      <div class="social_medialinks">
+        <h4>Follow Us</h4>
+        <div class="social_icons">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+        </div>
+      </div>
+      <div class="contact_us">
+        <h4>Contact Us</h4>
+        <ul class="ul_1">
+          <li>Email: info@ghanaflavors.com</li>
+          <li>Phone: +233 123 456 789</li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright">
+      &copy; JEREMIAH YANKSON 2025
+    </div>
+  </footer>
+</body>
+<script>
+    function toggleMenu() {
+      const menu = document.getElementById("nav-menu");
+      if (menu.style.display === "flex") {
+        menu.style.display = "none";
+      } else {
+        menu.style.display = "flex";
+        menu.style.flexDirection = "column";
+      }
+    }
+</script>
+</html>
